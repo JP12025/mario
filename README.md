@@ -33,7 +33,6 @@ Si l'utilisateur ne rentre pas un `int` strictement supérieur à 0, il faut red
 
 ```bash
 $ python mario.py
-Height: trois
 Height: -3
 Height: 3
        #
@@ -59,6 +58,6 @@ Que se passe-t-il si l'utilisateur tape :
 
 Nous avons tendance à faire confiance à la logique des utilisateurs mais, lorsque nous concevons un logiciel, nous devons imaginer des réponses qui ne correspondent à aucune logique.
 
-> "La logique est le dernier refuge des gens sans imagination.”
-> 
-> Oscar Wilde
+> "La logique est le dernier refuge des gens sans imagination.” Oscar Wilde
+
+https://video.univ-rennes1.fr/permalink/v1261ca6a5607nm2dri2/iframe/
