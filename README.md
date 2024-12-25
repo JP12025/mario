@@ -43,7 +43,7 @@ Height: 3
 > [!TIP]
 > * Pour vérifier qu'une chaîne de caractères (`str`) contient uniquement des chiffres, vous avez la fonction `isdigit()` ([Doc str](https://docs.python.org/fr/3/library/stdtypes.html#str.isdigit))
 
-# Tests
+# Les tests
 
 N'oubliez pas qu'il est important de tester son programme.
 En effet, lorsque vous décidez de tester un programme cela vous amène à vous poser des questions
@@ -60,4 +60,10 @@ Nous avons tendance à faire confiance à la logique des utilisateurs mais, lors
 
 > "La logique est le dernier refuge des gens sans imagination.” Oscar Wilde
 
-https://1992193849.rsc.cdn77.org/resources/r126400c6bfdaq0xsip5bz4cdsi2gt/media_720_BiOabuHL5D.mp4
+# La vidéo d'explication
+
+Nous vous encourageons à essayer de résoudre le problème par vous même.
+Si vous êtes bloqué et/ou que votre cerveau surchauffe, vous pouvez regarder la vidéo suivante.
+Attention, il faut se connecter avec votre sésame.
+
+https://video.univ-rennes1.fr/permalink/v1261ca6a5607nm2dri2/iframe/
