@@ -2,6 +2,8 @@
 
 ![end of first level](https://cs50.harvard.edu/x/2024/psets/1/mario/less/pyramid.png)
 
+# Le problème à résoudre
+
 Dans le jeu vidéo "Super Mario Bros." sorti en 1985, la fin du premier niveau consiste à monter une 
 demi-pyramide de briques.
 
@@ -40,4 +42,22 @@ Height: 3
 ```
 
 > [!TIP]
-> * Pour vérifier qu'une chaîne de caractères (`str`) contient uniquement des chiffres, vous avez la fonction `isdigit()` ([Doc str](https://docs.python.org/fr/3/library/stdtypes.html#textseq))
+> * Pour vérifier qu'une chaîne de caractères (`str`) contient uniquement des chiffres, vous avez la fonction `isdigit()` ([Doc str](https://docs.python.org/fr/3/library/stdtypes.html#str.isdigit))
+
+# Tests
+
+N'oubliez pas qu'il est important de tester son programme.
+En effet, lorsque vous décidez de tester un programme cela vous amène à vous poser des questions
+sur ce que fait votre programme et les cas particuliers.
+
+Que se passe-t-il si l'utilisateur tape :
+* un nombre négatif ?
+* 0 ?
+* un nombre positif
+* des lettres ou des mots ?
+* rien du tout ?
+
+Nous avons tendance à faire confiance à la logique des utilisateurs mais, lorsque nous concevons un logiciel, nous devons imaginer des réponses qui ne correspondent à aucune logique.
+
+> "La logique est le dernier refuge des gens sans imagination.”
+> Oscar WildeDe Oscar Wilde
