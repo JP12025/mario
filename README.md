@@ -27,7 +27,7 @@ de la pyramide et attend un `int` en réponse. Une fois que l'utilisateur a rép
 pyramide sur la sortie standard.
 
 > [!TIP]
-> * Pour transformer un `str`en `int`, il suffit d'utiliser la fonction `int()`
+> Pour transformer un `str`en `int`, il suffit d'utiliser la fonction `int()`
 
 Si l'utilisateur ne rentre pas un `int` strictement supérieur à 0, il faut redemander sans afficher de message d'erreur, comme dans l'exemple ci-dessous.
 
@@ -41,7 +41,7 @@ Height: 3
 ```
 
 > [!TIP]
-> * Pour vérifier qu'une chaîne de caractères (`str`) contient uniquement des chiffres, vous avez la fonction `isdigit()` ([Doc str](https://docs.python.org/fr/3/library/stdtypes.html#str.isdigit))
+> Pour vérifier qu'une chaîne de caractères (`str`) contient uniquement des chiffres, vous avez la fonction `isdigit()` ([Doc str](https://docs.python.org/fr/3/library/stdtypes.html#str.isdigit))
 
 # Les tests
 
