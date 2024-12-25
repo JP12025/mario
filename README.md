@@ -6,7 +6,6 @@
 
 Dans le jeu vidéo "Super Mario Bros." sorti en 1985, la fin du premier niveau consiste à monter une 
 demi-pyramide de briques.
-
 Dans un fichier nommé `mario.py`, vous devez écrire un programme qui recrée cette pyramide avec le symbole `#` comme dans l'exemple ci-dessous (pyramide de 8).
 
 ```bash
@@ -72,11 +71,3 @@ git push
 ```
 
 Des tests automatiques seront lancés dont vous pourrez voir les résultats sur github.
-
-# La vidéo d'explication
-
-Nous vous encourageons à essayer de résoudre le problème par vous même.
-Si vous êtes bloqué et/ou que votre cerveau surchauffe, vous pouvez regarder la vidéo suivante.
-Attention, il faut se connecter avec votre sésame.
-
-Lien video à ajouter
