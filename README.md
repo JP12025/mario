@@ -60,4 +60,4 @@ Nous avons tendance à faire confiance à la logique des utilisateurs mais, lors
 
 > "La logique est le dernier refuge des gens sans imagination.” Oscar Wilde
 
-https://video.univ-rennes1.fr/downloads/file/v1261ca6a5607nm2dri2/?url=media_720_BiOabuHL5D.mp4
+https://1992193849.rsc.cdn77.org/resources/r126400c6bfdaq0xsip5bz4cdsi2gt/media_720_BiOabuHL5D.mp4
