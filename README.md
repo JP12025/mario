@@ -66,4 +66,4 @@ Nous vous encourageons à essayer de résoudre le problème par vous même.
 Si vous êtes bloqué et/ou que votre cerveau surchauffe, vous pouvez regarder la vidéo suivante.
 Attention, il faut se connecter avec votre sésame.
 
-https://video.univ-rennes1.fr/permalink/v1261ca6a5607nm2dri2/iframe/
+
