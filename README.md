@@ -60,4 +60,5 @@ Que se passe-t-il si l'utilisateur tape :
 Nous avons tendance à faire confiance à la logique des utilisateurs mais, lorsque nous concevons un logiciel, nous devons imaginer des réponses qui ne correspondent à aucune logique.
 
 > "La logique est le dernier refuge des gens sans imagination.”
-> Oscar WildeDe Oscar Wilde
+> 
+> Oscar Wilde
