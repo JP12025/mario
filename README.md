@@ -56,9 +56,22 @@ Que se passe-t-il si l'utilisateur tape :
 * des lettres ou des mots ?
 * rien du tout ?
 
-Nous avons tendance à faire confiance à la logique des utilisateurs mais, lorsque nous concevons un logiciel, nous devons imaginer des réponses qui ne correspondent à aucune logique.
+Nous avons tendance à faire confiance à la logique des utilisateurs mais, 
+lorsque nous concevons un logiciel, nous devons imaginer des réponses qui 
+ne correspondent à aucune logique.
 
 > "La logique est le dernier refuge des gens sans imagination.” Oscar Wilde
+
+# Le rendu via git
+A tout moment, vous pouvez soumettre votre travail sur github visa un `push`.
+
+```bash
+git add hello.py
+git commit -m "My answer"
+git push
+```
+
+Des tests automatiques seront lancés dont vous pourrez voir les résultats sur github.
 
 # La vidéo d'explication
 
@@ -66,4 +79,4 @@ Nous vous encourageons à essayer de résoudre le problème par vous même.
 Si vous êtes bloqué et/ou que votre cerveau surchauffe, vous pouvez regarder la vidéo suivante.
 Attention, il faut se connecter avec votre sésame.
 
-
+Lien video à ajouter
