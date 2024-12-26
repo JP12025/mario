@@ -25,6 +25,16 @@ Comme vous le voyez, le programme commence par demander à l'utilisateur la haut
 de la pyramide et attend un `int` en réponse. Une fois que l'utilisateur a répondu, le programme affiche la
 pyramide sur la sortie standard.
 
+```bash
+$ python mario.py
+Height: 5
+    #
+   ##
+  ###
+ ####
+#####
+```
+
 > [!TIP]
 > Pour transformer un `str`en `int`, il suffit d'utiliser la fonction `int()`
 
@@ -34,9 +44,9 @@ Si l'utilisateur ne rentre pas un `int` strictement supérieur à 0, il faut red
 $ python mario.py
 Height: -3
 Height: 3
-       #
-      ##
-     ###
+  #
+ ##
+###
 ```
 
 > [!TIP]
