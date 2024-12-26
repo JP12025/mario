@@ -65,7 +65,7 @@ ne correspondent à aucune logique.
 A tout moment, vous pouvez soumettre votre travail sur github visa un `push`.
 
 ```bash
-git add hello.py
+git add mario.py
 git commit -m "My answer"
 git push
 ```
