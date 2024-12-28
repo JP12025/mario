@@ -76,4 +76,4 @@ We tend to trust users' logic, but, when we write code, we have to imagine answe
 
 # How to Submit
 
-Once you're done with all tasks, submit your python files on Moodle
+Once you're done with all tasks, submit all your python files on Moodle
