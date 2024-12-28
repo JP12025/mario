@@ -4,8 +4,8 @@
 
 # What to Do
 
-In the “Super Mario Bros.” video game, released in 1985, towards the end of the first level Mario must ascend right-aligned pyramid of bricks.
-In a file named `mario.py`, you need to write a program that recreates this pyramid using `#` as bricks, as in the below.
+In “Super Mario Bros.” released in 1985, towards the end of the first level Mario must ascend right-aligned pyramid of bricks.
+In a file named `mario.py`, implement a program that recreates this pyramid using `#` as bricks, as in the below.
 
 ```bash
 $ python mario.py
@@ -20,7 +20,7 @@ Height: 8
 ########
 ```
 
-First prompt the user for an `int` for the pyramid’s actual height, so that the program can also output shorter pyramids like the below:
+First, prompt the user for an `int` for the pyramid’s actual height, so that the program can also output shorter pyramids like the below:
 
 ```bash
 $ python mario.py
