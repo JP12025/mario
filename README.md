@@ -4,7 +4,7 @@
 
 # What to Do
 
-In “Super Mario Bros.” released in 1985, towards the end of the first level Mario must ascend right-aligned pyramid of bricks.
+Towards the end of the first level of “Super Mario Bros.” released in 1985, Mario must ascend right-aligned pyramid of bricks.
 In a file named `mario.py`, implement a program that recreates this pyramid using `#` as bricks, as in the below.
 
 ```bash
