@@ -56,8 +56,7 @@ By Sunday, january 12, 2025 at 11:59 PM
 
 # How to Test
 
-- Test your script with command `./check [-v] mario.py`
-- `-v` option gives the difference between what is expected and what your script prints
+- Test your script with command `./check mario.py`
 
 Don't forget it's important to test your program.
 In fact, when you decide to test a program, you'll have to ask yourself questions about what your program does and what the special cases are.
