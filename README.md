@@ -5,7 +5,7 @@
 # What to Do
 
 Towards the end of the first level of “Super Mario Bros.” released in 1985, Mario must ascend right-aligned pyramid of bricks.
-In a file named `mario.py`, implement a program that recreates this pyramid using `#` as bricks, as in the below.
+In a file named `mario.py` (Python) or `mario.jl` (Julia), implement a program that recreates this pyramid using `#` as bricks, as in the below.
 
 ```bash
 $ python mario.py
@@ -23,7 +23,7 @@ Height: 8
 First, prompt the user for an `int` for the pyramid’s actual height, so that the program can also output shorter pyramids like the below:
 
 ```bash
-$ python mario.py
+$ julia mario.jl
 Height: 5
     #
    ##
@@ -33,13 +33,15 @@ Height: 5
 ```
 
 > [!TIP]
-> To transform `str` into `int`, simply use `int()`.
+> To transform `str` into `int`, simply use `int()` ([Python ref](https://docs.python.org/3/library/functions.html#int)).
+> 
+> To transform `String` into `Int`, simply use `parse()` ([Julia ref](https://docs.julialang.org/en/v1/base/numbers/#Base.parse)).
 
 
 Re-prompt the user, again and again as needed, if their input is not greater than 0 or not an int altogether.
 
 ```bash
-$ python mario.py
+$ julia mario.jl
 Height: 0
 Height: 3
   #
@@ -52,11 +54,13 @@ Height: 3
 
 # When to Do it
 
-By Sunday, january 19, 2025 at 11:59 PM
+By Sunday, march 9, 2025 at 11:59 PM
 
 # How to Test
 
-- Test your script with command `./check mario.py`
+Test your script with command:
+- `./check -p mario.py` if you write Python code
+- `./check -j mario.jl` if you write Julia code
 
 Don't forget it's important to test your program.
 In fact, when you decide to test a program, you'll have to ask yourself questions about what your program does and what the special cases are.
