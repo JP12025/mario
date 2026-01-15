@@ -33,10 +33,10 @@ Height: 5
 ```
 
 > [!TIP]
-> To transforma `str` into `int`, simply use `int()` ([Python ref](https://docs.python.org/3/library/functions.html#int)).
+
+> To transform `str` into `int`, simply use `int()` ([Python ref](https://docs.python.org/3/library/functions.html#int)).
 > 
 > To transform `String` into `Int`, simply use `parse()` ([Julia ref](https://docs.julialang.org/en/v1/base/numbers/#Base.parse)).
-
 
 Re-prompt the user, again and again as needed, if their input is not greater than 0 or not an int altogether.
 
