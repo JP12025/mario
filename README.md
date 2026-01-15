@@ -33,7 +33,7 @@ Height: 5
 ```
 
 > [!TIP]
-> To transform `str` into `int`, simply use `int()` ([Python ref](https://docs.python.org/3/library/functions.html#int)).
+> To transforma `str` into `int`, simply use `int()` ([Python ref](https://docs.python.org/3/library/functions.html#int)).
 > 
 > To transform `String` into `Int`, simply use `parse()` ([Julia ref](https://docs.julialang.org/en/v1/base/numbers/#Base.parse)).
 
