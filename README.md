@@ -37,14 +37,7 @@ Height: 5
 
 Re-prompt the user, again and again as needed, if their input is not greater than 0 or not an int altogether.
 
-```bash
-$ python mario.py
-Height: 0
-Height: 3
-  #
- ##
-###
-```
+![Demo of mario.py](mario.gif)
 
 > [!TIP]
 > To check that a string (`str`) contains only digits, you may use `isdigit()`. ([Python ref](https://docs.python.org/3/library/stdtypes.html#str.isdigit))
