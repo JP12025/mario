@@ -7,26 +7,17 @@ prints and tries to explain what is wrong.
 Run the tests from the exercise folder with:
 
     python test_mario.py
-
-Both `mario.py` and `mario.jl` are tested, whichever is present.
 """
 
 import os
-import shutil
 import subprocess
 import sys
 from pathlib import Path
 
 EXERCISE_DIR = Path(__file__).resolve().parent
+SCRIPT = "mario.py"
 PROMPT = "Height: "
-
-# Programs that can be tested: file name -> (command, timeout in seconds).
-# sys.executable is the Python running the tests, so "python" vs "python3"
-# does not matter.
-PROGRAMS = {
-    "mario.py": ([sys.executable], 5),
-    "mario.jl": (["julia", "--startup-file=no"], 60),
-}
+TIMEOUT = 5  # seconds
 
 # Each test case: (what is checked, answers typed by the user).
 # Convention: only the LAST answer is a valid height, all the others
@@ -47,21 +38,17 @@ CASES = [
 # Running the student's program
 # ---------------------------------------------------------------------------
 
-def find_scripts():
-    """Return the names of the student's programs found in the folder."""
-    return [name for name in PROGRAMS if (EXERCISE_DIR / name).is_file()]
-
-
-def run_program(script, answers):
+def run_program(answers):
     """Run the program, typing the answers one per line.
 
     Return (stdout, stderr, return code), or None if the program
     did not stop in time.
     """
-    command, timeout = PROGRAMS[script]
     try:
+        # sys.executable is the Python running the tests,
+        # so "python" vs "python3" does not matter.
         result = subprocess.run(
-            command + [script],
+            [sys.executable, SCRIPT],
             input="\n".join(answers) + "\n",
             capture_output=True,
             text=True,
@@ -69,7 +56,7 @@ def run_program(script, answers):
             errors="replace",
             cwd=EXERCISE_DIR,
             env=dict(os.environ, PYTHONIOENCODING="utf-8"),
-            timeout=timeout,
+            timeout=TIMEOUT,
         )
     except subprocess.TimeoutExpired:
         return None
@@ -225,13 +212,9 @@ def check_pyramid(rows, height):
             f"Your pyramid:\n{show(rows)}")
 
 
-def check_case(script, answers):
+def check_case(answers):
     """Run one test case. Return None if it passes, else an error message."""
-    command = PROGRAMS[script][0]
-    if shutil.which(command[0]) is None:
-        return f"{command[0]} not found: is it installed?"
-
-    result = run_program(script, answers)
+    result = run_program(answers)
     if result is None:
         return ("Your program did not stop (infinite loop?). Check that "
                 "input() is called inside your loop.")
@@ -262,30 +245,25 @@ def main():
     red = "\033[31m" if use_colors else ""
     reset = "\033[0m" if use_colors else ""
 
-    scripts = find_scripts()
-    if not scripts:
-        print(f"No mario.py or mario.jl found in {EXERCISE_DIR}")
+    if not (EXERCISE_DIR / SCRIPT).is_file():
+        print(f"No {SCRIPT} found in {EXERCISE_DIR}")
         return 1
 
     nb_ok = 0
-    nb_total = 0
-    for script in scripts:
-        print(f"Testing {script}")
-        for description, answers in CASES:
-            nb_total += 1
-            typed = ", ".join(repr(answer) for answer in answers)
-            message = check_case(script, answers)
-            if message is None:
-                nb_ok += 1
-                print(f"{green}✔{reset} {description}")
-            else:
-                print(f"{red}✗{reset} {description}")
-                print(f"    Answers typed: {typed}")
-                print("    " + message.replace("\n", "\n    ") + "\n")
+    for description, answers in CASES:
+        typed = ", ".join(repr(answer) for answer in answers)
+        message = check_case(answers)
+        if message is None:
+            nb_ok += 1
+            print(f"{green}\u2714{reset} {description}")
+        else:
+            print(f"{red}\u2717{reset} {description}")
+            print(f"    Answers typed: {typed}")
+            print("    " + message.replace("\n", "\n    ") + "\n")
 
-    color = green if nb_ok == nb_total else red
-    print(f"Validated: {color}{nb_ok}/{nb_total}{reset}")
-    return 0 if nb_ok == nb_total else 1
+    color = green if nb_ok == len(CASES) else red
+    print(f"Validated: {color}{nb_ok}/{len(CASES)}{reset}")
+    return 0 if nb_ok == len(CASES) else 1
 
 
 if __name__ == "__main__":
