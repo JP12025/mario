@@ -36,6 +36,7 @@ Height: 5
 > To transform `str` into `int`, simply use `int()` ([Python ref](https://docs.python.org/3/library/functions.html#int)).
 
 Re-prompt the user, again and again as needed, if their input is not greater than 0 or not an int altogether.
+Don't use `try/except` structure, it's not needed here. A `while` loop is ok.
 
 ```bash
 $ python mario.py
